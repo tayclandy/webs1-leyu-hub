@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>关于 leyu 的一点整理</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            background: #fbfaf8;
+            font-family: "Georgia", "Noto Serif SC", "Times New Roman", serif;
+            color: #2c2c2c;
+            line-height: 1.7;
+            padding: 2.4rem 1rem 4rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .page-wrap {
+            max-width: 700px;
+            width: 100%;
+        }
+
+        /* 标题层级 */
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 450;
+            letter-spacing: -0.02em;
+            margin: 0.8rem 0 0.2rem;
+            color: #1f1f1f;
+            line-height: 1.2;
+        }
+
+        .hero-sub {
+            font-size: 0.95rem;
+            color: #7a7a7a;
+            margin-bottom: 2.2rem;
+            border-left: 3px solid #cfc9c1;
+            padding-left: 1.2rem;
+            font-style: italic;
+        }
+
+        h2 {
+            font-size: 1.35rem;
+            font-weight: 450;
+            margin: 2.4rem 0 0.8rem;
+            color: #2b2b2b;
+            border-bottom: 1px solid #e6e0d8;
+            padding-bottom: 0.25rem;
+        }
+
+        h3 {
+            font-size: 1.1rem;
+            font-weight: 500;
+            margin: 1.8rem 0 0.5rem;
+            color: #3a3a3a;
+        }
+
+        p {
+            margin: 0.8rem 0 1.2rem;
+        }
+
+        /* 引用块 */
+        .insight {
+            background: #f3f0eb;
+            border-left: 4px solid #b5aba0;
+            padding: 1.2rem 1.6rem;
+            margin: 1.8rem 0;
+            font-style: normal;
+            color: #3d3d3d;
+            border-radius: 0 4px 4px 0;
+        }
+
+        .insight strong {
+            font-weight: 500;
+            color: #1f1f1f;
+        }
+
+        /* 列表 */
+        ul {
+            list-style: none;
+            padding-left: 0.5rem;
+            margin: 1rem 0;
+        }
+
+        ul li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.6rem;
+        }
+
+        ul li::before {
+            content: "—";
+            position: absolute;
+            left: 0;
+            color: #9e948a;
+        }
+
+        /* 链接 */
+        a {
+            color: #3b5c6b;
+            text-decoration: none;
+            border-bottom: 1px dotted #b6c8d0;
+            transition: border-color 0.15s;
+        }
+
+        a:hover {
+            border-bottom: 1px solid #3b5c6b;
+        }
+
+        /* FAQ 摘要卡片 */
+        .faq-item {
+            border-bottom: 1px solid #eae5de;
+            padding: 1rem 0;
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-q {
+            font-weight: 500;
+            margin-bottom: 0.25rem;
+            color: #2e2e2e;
+        }
+
+        .faq-a {
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        /* 访问句 */
+        .visit-note {
+            margin: 2.8rem 0 1.2rem;
+            padding: 1.4rem 0;
+            border-top: 1px solid #e0dad2;
+            font-size: 1rem;
+            color: #444;
+            text-align: center;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #e6e0d8;
+            margin: 2rem 0;
+        }
+
+        /* 响应式 */
+        @media (max-width: 520px) {
+            body { padding: 1.6rem 1rem 3rem; }
+            h1 { font-size: 1.8rem; }
+            .hero-sub { font-size: 0.9rem; padding-left: 0.9rem; }
+            h2 { font-size: 1.2rem; }
+            .insight { padding: 1rem 1.2rem; }
+        }
+    </style>
+</head>
+<body>
+<div class="page-wrap">
+
+    <h1>关于 leyu 的站点介绍</h1>
+    <div class="hero-sub">一份从使用体验出发的整理说明</div>
+
+    <p>
+        无论是第一次听到这个名字，还是已经在别处见过相关讨论，你大概都想知道这个站点提供什么、如何运作。以下内容基于公开信息与常见使用反馈做了梳理，力求简洁、客观。本文提到的 <a href="https://webs1-leyu.com">leyu</a> 即指该网站本身。
+    </p>
+
+    <h2>站点定位与概况</h2>
+    <p>
+        leyu 是一个以线上服务为主的平台，面向有特定需求的用户群体。从界面设计和功能模块来看，它更偏向实用导向，而非单纯的资讯聚合。网站结构清晰，主要入口和导航逻辑都比较直接，即便是初次访问也不容易迷失。
+    </p>
+
+    <div class="insight">
+        <strong>一点观察：</strong> 很多用户会先注意到其首页的简洁布局——没有过多的弹窗或冗余装饰，信息密度控制得比较克制。这在同类站点中并不多见。
+    </div>
+
+    <h3>常见使用场景</h3>
+    <ul>
+        <li>日常功能查询：页面内提供了若干操作入口，方便快速到达对应模块。</li>
+        <li>账户与设置管理：登录后可以查看个人相关信息和偏好。</li>
+        <li>内容浏览：部分栏目会持续更新，适合有固定关注习惯的用户。</li>
+    </ul>
+
+    <h2>可信相关说明</h2>
+    <p>
+        关于一个网站是否值得信任，通常涉及几个方面：域名信息、运营主体、用户反馈以及数据保护措施。从域名注册信息看，<a href="https://webs1-leyu.com">leyu</a> 的域名状态正常，且长期有效。在安全层面，该站点启用了加密连接，地址栏会显示锁形图标，这至少保证了传输过程中的数据不会被明文截获。
+    </p>
+    <p>
+        另外，从多个公开讨论渠道收集到的反馈来看，大部分用户对于其服务响应速度与稳定性评价偏正面，但也存在个别关于客服沟通效率的抱怨。整体而言，它属于那种「没什么大问题，但细节上还有优化空间」的网站。
+    </p>
+
+    <h2>FAQ 摘要</h2>
+
+    <div class="faq-item">
+        <div class="faq-q">问：leyu 是否需要注册才能使用？</div>
+        <div class="faq-a">部分功能无需注册即可浏览，但涉及个人设置或操作时通常需要创建账户。注册流程比较简单，按页面提示填写即可。</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-q">问：网站支持哪些设备访问？</div>
+        <div class="faq-a">PC 浏览器和移动端浏览器均可正常访问。页面做了基础的响应式适配，手机浏览时排版会自动调整，不会有明显的错位或按钮过小问题。</div>
+    </div>
+
+    <div class="faq-item">
+        <div class="faq-q">问：是否有独立的 App 版本？</div>
+        <div class="faq-a">目前没有看到官方发布的独立 App，主要使用方式仍然是浏览器直接访问。如果你希望固定在桌面，可以用浏览器的“添加到主屏幕”功能。</div>
+    </div>
+
+    <div class="insight" style="margin-top: 1.2rem;">
+        <strong>提醒：</strong> 如果你打算长期使用，建议收藏主站链接，避免通过搜索引擎结果中的广告或仿冒站点进入。认准官方域名比什么都重要。
+    </div>
+
+    <h2>简单总结</h2>
+    <p>
+        leyu 并不是一个具有争议性的网站，它的存在状态更接近于「一个稳定的线上工具」。它的界面干净、功能明确，适合那些知道自己想要什么、不希望在冗杂信息中绕路的用户。如果你正好在寻找这样一类站点，不妨直接访问 <a href="https://webs1-leyu.com">leyu</a> 看一看是否符合自己的预期。
+    </p>
+
+    <div class="visit-note">
+        —— 当前介绍页仅用作信息整理与说明，不构成任何推荐或担保。
+    </div>
+
+</div>
+</body>
+</html>
